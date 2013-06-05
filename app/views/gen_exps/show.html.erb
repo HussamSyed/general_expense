@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Amount:</b>
+  <%= @gen_exp.amount %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @gen_exp.date %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%= @gen_exp.details %>
+</p>
+
+<p>
+  <b>Method of payment:</b>
+  <%= @gen_exp.method_of_payment %>
+</p>
+
+<p>
+  <b>Seller:</b>
+  <%= @gen_exp.seller %>
+</p>
+
+<p>
+  <b>Purpose:</b>
+  <%= @gen_exp.purpose %>
+</p>
+
+
+<%= link_to 'Edit', edit_gen_exp_path(@gen_exp) %> |
+<%= link_to 'Back', gen_exps_path %>

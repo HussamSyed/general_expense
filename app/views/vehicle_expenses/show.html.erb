@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Model:</b>
+  <%= @vehicle.vehicle_model %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @vehicle_expense.amount %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @vehicle_expense.date %>
+</p>
+
+<p>
+  <b>Method of payment:</b>
+  <%= @vehicle_expense.method_of_payment %>
+</p>
+
+<p>
+  <b>Purpose:</b>
+  <%= @vehicle_expense.purpose %>
+</p>
+
+<p>
+  <b>Seller:</b>
+  <%= @vehicle_expense.seller %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%= @vehicle_expense.details %>
+</p>
+
+
+<%= link_to 'Edit', edit_vehicle_expense_path(@vehicle_expense) %> |
+<%= link_to 'Back', vehicle_expenses_path %>

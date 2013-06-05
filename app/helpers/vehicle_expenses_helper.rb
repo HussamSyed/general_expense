@@ -1,0 +1,2 @@
+module VehicleExpensesHelper
+end

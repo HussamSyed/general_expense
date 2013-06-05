@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  amount: 9.99
+  date: 2013-06-04
+  method_of_payment: MyString
+  seller: MyString
+  purpose: MyString
+
+two:
+  amount: 9.99
+  date: 2013-06-04
+  method_of_payment: MyString
+  seller: MyString
+  purpose: MyString

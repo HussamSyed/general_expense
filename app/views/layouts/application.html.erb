@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>General Expenses</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="container" style="padding-top:40px">
+
+	<div class="navbar navbar-fixed-top navbar-inverse">
+		<div class="navbar-inner">
+			<div class="container">
+			<!--<%= link_to %>-->
+			<div class="nav-collapse">
+				<ul class="nav">
+					<li>
+		              	<%= link_to "General Expenses", gen_exps_path %>
+		          	</li>
+		          	<!--end of dropdown menu for general expenses-->
+		          	<li>
+		            	<%= link_to "Travel Expenses"%>
+		          	</li>
+		          	<!--end of dropdown menu for travel expenses-->
+		          	<li>
+		          		<%= link_to "Vehicle Expenses"%>
+		          	</li>
+		          	<!--end of dropdown menu for vehicle expenses-->
+		          	<li>
+		          		<%= link_to "Meals & Entertainment", me_exps_path %>
+		          	</li>
+		          	<!--end of dropdown menu for meals & entertainment-->
+		         </ul>
+			</div>
+		</div>
+	</div>
+	</div>
+<%= yield %>
+
+</body>
+</html>
+<!--top bar has general expense, vehicle expense, meals & entertainment, travel expenses (only work on general expense)-->

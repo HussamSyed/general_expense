@@ -1,0 +1,31 @@
+<h1>Meals & Entertainment</h1>
+
+<table>
+  <tr>
+    <th>Amount</th>
+    <th>Date</th>
+    <th>Venue</th>
+    <th>No of people</th>
+    <th>Details</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @me_exps.each do |me_exp| %>
+  <tr>
+    <td><%= me_exp.amount %></td>
+    <td><%= me_exp.date %></td>
+    <td><%= me_exp.venue %></td>
+    <td><%= me_exp.no_of_people %></td>
+    <td><%= me_exp.details %></td>
+    <td><%= link_to 'Show', me_exp %></td>
+    <td><%= link_to 'Edit', edit_me_exp_path(me_exp) %></td>
+    <td><%= link_to 'Destroy', me_exp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Expense', new_me_exp_path %>

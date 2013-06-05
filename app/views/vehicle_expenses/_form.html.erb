@@ -1,0 +1,38 @@
+<%= simple_form_for(@vehicle_expense) do |f| %>
+  <% if @vehicle_expense.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vehicle_expense.errors.count, "error") %> prohibited this vehicle_expense from being saved:</h2>
+
+      <ul>
+      <% @vehicle_expense.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.input :vehicle_id, :collection => Vehicle.all, :label_method => :vehicle_model, :value_method => :id  %>
+  </div>
+  <div class="field">
+    <%= f.input :amount %><br />
+  </div>
+  <div class="field">
+    <%= f.input :date %><br />
+  </div>
+  <div class="field">
+    <%= f.input :method_of_payment %><br />
+  </div>
+  <div class="field">
+    <%= f.input :purpose %><br />
+  </div>
+  <div class="field">
+    <%= f.input :seller %><br />
+  </div>
+  <div class="field">
+    <%= f.input :details %><br />
+  </div>
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

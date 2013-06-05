@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Amount:</b>
+  <%= @me_exp.amount %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @me_exp.date %>
+</p>
+
+<p>
+  <b>Venue:</b>
+  <%= @me_exp.venue %>
+</p>
+
+<p>
+  <b>No of people:</b>
+  <%= @me_exp.no_of_people %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%= @me_exp.details %>
+</p>
+
+
+<%= link_to 'Edit', edit_me_exp_path(@me_exp) %> |
+<%= link_to 'Back', me_exps_path %>

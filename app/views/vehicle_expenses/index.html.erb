@@ -1,0 +1,33 @@
+<h1>Listing vehicle_expenses</h1>
+
+<table>
+  <tr>
+    <th>Amount</th>
+    <th>Date</th>
+    <th>Method of payment</th>
+    <th>Purpose</th>
+    <th>Seller</th>
+    <th>Details</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vehicle_expenses.each do |vehicle_expense| %>
+  <tr>
+    <td><%= vehicle_expense.amount %></td>
+    <td><%= vehicle_expense.date %></td>
+    <td><%= vehicle_expense.method_of_payment %></td>
+    <td><%= vehicle_expense.purpose %></td>
+    <td><%= vehicle_expense.seller %></td>
+    <td><%= vehicle_expense.details %></td>
+    <td><%= link_to 'Show', vehicle_expense %></td>
+    <td><%= link_to 'Edit', edit_vehicle_expense_path(vehicle_expense) %></td>
+    <td><%= link_to 'Destroy', vehicle_expense, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vehicle expense', new_vehicle_expense_path %>
