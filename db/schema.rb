@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130605182304) do
+ActiveRecord::Schema.define(:version => 20130605210759) do
 
   create_table "gen_exps", :force => true do |t|
     t.decimal  "amount"
@@ -32,6 +32,14 @@ ActiveRecord::Schema.define(:version => 20130605182304) do
     t.text     "details"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "travels", :force => true do |t|
+    t.date     "start_date"
+    t.date     "end_date"
+    t.string   "destination"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "veh_exps", :force => true do |t|

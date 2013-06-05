@@ -1,4 +1,4 @@
-<h1>Listing vehicles</h1>
+<h1>Vehicles</h1>
 
 <table>
   <tr>
@@ -15,7 +15,7 @@
 <% @vehicles.each do |vehicle| %>
   <tr>
     <td><%= vehicle.make %></td>
-    <td><%= vehicle.model %></td>
+    <td><%= vehicle.vehicle_model %></td>
     <td><%= vehicle.year %></td>
     <td><%= vehicle.vin %></td>
     <td><%= vehicle.reg_no %></td>
@@ -28,4 +28,4 @@
 
 <br />
 
-<%= link_to 'New Vehicle', new_vehicle_path %>
+<%= link_to 'Add Vehicle', new_vehicle_path %> | <%= link_to 'Vehicle Expenses', vehicle_expenses_path %>

@@ -1,7 +1,8 @@
-<h1>Listing vehicle_expenses</h1>
+<h1>Vehicle Expenses</h1>
 
 <table>
   <tr>
+    <th>Model</th>
     <th>Amount</th>
     <th>Date</th>
     <th>Method of payment</th>
@@ -15,6 +16,7 @@
 
 <% @vehicle_expenses.each do |vehicle_expense| %>
   <tr>
+    <td><%= vehicle_expense.vehicle.vehicle_model %></td>
     <td><%= vehicle_expense.amount %></td>
     <td><%= vehicle_expense.date %></td>
     <td><%= vehicle_expense.method_of_payment %></td>
@@ -30,4 +32,4 @@
 
 <br />
 
-<%= link_to 'New Vehicle expense', new_vehicle_expense_path %>
+<%= link_to 'New Expense', new_vehicle_expense_path %> | <%= link_to 'Vehicles', vehicles_path %> | <%= link_to 'Add Vehicle', new_vehicle_path %>

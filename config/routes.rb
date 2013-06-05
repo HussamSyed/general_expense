@@ -1,4 +1,7 @@
 GeneralExpense::Application.routes.draw do
+  resources :travels
+
+
   resources :vehicle_expenses
 
 
