@@ -5,6 +5,7 @@
     <th>Start date</th>
     <th>End date</th>
     <th>Destination</th>
+    <th>Purpose</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,6 +16,7 @@
     <td><%= travel.start_date %></td>
     <td><%= travel.end_date %></td>
     <td><%= travel.destination %></td>
+    <td><%= travel.purpose %></td>
     <td><%= link_to 'Show', travel %></td>
     <td><%= link_to 'Edit', edit_travel_path(travel) %></td>
     <td><%= link_to 'Destroy', travel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -24,4 +26,4 @@
 
 <br />
 
-<%= link_to 'New Trip', new_travel_path %>
+<%= link_to 'Add Trip', new_travel_path %> | <%= link_to 'Travel Expenses', travel_expenses_path %> 

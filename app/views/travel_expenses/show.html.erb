@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Amount:</b>
+  <%= @travel_expense.amount %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @travel_expense.date %>
+</p>
+
+<p>
+  <b>Method of Payment:</b>
+  <%= @travel_expense.method_of_payment %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%= @travel_expense.details %>
+</p>
+
+<p>
+  <b>Purpose:</b>
+  <%= @travel_expense.purpose %>
+</p>
+
+<p>
+  <b>Seller:</b>
+  <%= @travel_expense.seller %>
+</p>
+
+
+<%= link_to 'Edit', edit_travel_expense_path(@travel_expense) %> |
+<%= link_to 'Back', travel_expenses_path %>
