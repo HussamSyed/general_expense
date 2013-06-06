@@ -18,7 +18,7 @@
     <td><%= vehicle.year %></td>
     <td><%= vehicle.make %></td>
     <td><%= vehicle.vehicle_model %></td>
-    <td><%= vehicle.business_vehicle %></td>
+    <td><%= vehicle.business_vehicle ? 'Yes' : 'No' %></td>
     <td><%= vehicle.vin %></td>
     <td><%= vehicle.reg_no %></td>
     <td><%= link_to 'Show', vehicle %></td>

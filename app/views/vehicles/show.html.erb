@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+
+
 <p>
   <b>Year:</b>
   <%= @vehicle.year %>
@@ -17,7 +19,7 @@
 
 <p>
   <b>Business Vehicle?</b>
-  <%= @vehicle.business_vehicle %>
+  <%= @vehicle.business_vehicle ? 'Yes' : 'No' %>
 </p>
 
 <p>
