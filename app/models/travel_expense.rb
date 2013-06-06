@@ -7,7 +7,7 @@ class TravelExpense < ActiveRecord::Base
 
   #Validations
   validates_presence_of :amount, :date, :details, :method_of_payment, :purpose, 
-  :seller
+  :seller, :travel_id
 
   #Methods
 

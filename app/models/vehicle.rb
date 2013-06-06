@@ -3,6 +3,7 @@ class Vehicle < ActiveRecord::Base
 
   #Associations 
   has_many :vehicle_expenses
+  has_many :mileage_segments
 
   #Validations
   validates_uniqueness_of :vin

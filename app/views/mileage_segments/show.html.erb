@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Vehicle:</b>
+  <%= @mileage_segment.vehicle.vehicle_model %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @mileage_segment.date %>
+</p>
+
+<p>
+  <b>Miles Driven:</b>
+  <%= @mileage_segment.miles_driven %>
+</p>
+
+<p>
+  <b>Destination:</b>
+  <%= @mileage_segment.destination %>
+</p>
+
+<p>
+  <b>Purpose:</b>
+  <%= @mileage_segment.purpose %>
+</p>
+
+
+<%= link_to 'Edit', edit_mileage_segment_path(@mileage_segment) %> |
+<%= link_to 'Back', mileage_segments_path %>

@@ -5,10 +5,10 @@
     <th>Amount</th>
     <th>Reimbursable?</th>
     <th>Date</th>
-    <th>Details</th>
     <th>Method of Payment</th>
     <th>Seller</th>
     <th>Purpose</th>
+    <th>Details</th>
     <th></th>
     <th></th>
     <th></th>
@@ -19,10 +19,10 @@
     <td><%= gen_exp.amount %></td>
     <td><%= gen_exp.reimbursable %></td>
     <td><%= gen_exp.date %></td>
-    <td><%= gen_exp.details %></td>
     <td><%= gen_exp.method_of_payment %></td>
     <td><%= gen_exp.seller %></td>
     <td><%= gen_exp.purpose %></td>
+    <td><%= gen_exp.details %></td>
     <td><%= link_to 'Show', gen_exp %></td>
     <td><%= link_to 'Edit', edit_gen_exp_path(gen_exp) %></td>
     <td><%= link_to 'Destroy', gen_exp, method: :delete, data: { confirm: 'Are you sure?' } %></td>

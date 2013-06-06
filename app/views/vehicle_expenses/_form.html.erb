@@ -13,27 +13,13 @@
 
   <div class="field">
     <%= f.input :vehicle_id, :collection => Vehicle.all, :label_method => :vehicle_model, :value_method => :id  %>
-  </div>
-  <div class="field">
-    <%= f.input :amount %><br />
-  </div>
-   <div class="field">
-    <%= f.input :reimbursable %><br />
-  </div>
-  <div class="field">
-    <%= f.input :date %><br />
-  </div>
-  <div class="field">
-    <%= f.input :method_of_payment %><br />
-  </div>
-  <div class="field">
-    <%= f.input :purpose %><br />
-  </div>
-  <div class="field">
-    <%= f.input :seller %><br />
-  </div>
-  <div class="field">
-    <%= f.input :details, :input_html => {:rows => 5, :cols => 20} %><br />
+    <%= f.input :amount %>
+    <%= f.input :reimbursable %>
+    <%= f.input :date %>
+    <%= f.input :method_of_payment %>
+    <%= f.input :purpose %>
+    <%= f.input :seller %>
+    <%= f.input :details, :input_html => {:rows => 5, :cols => 20} %>
   </div>
   <div class="actions">
     <%= f.button :submit, "Create Vehicle" %>

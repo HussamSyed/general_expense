@@ -16,11 +16,6 @@
 </p>
 
 <p>
-  <b>Details:</b>
-  <%= @gen_exp.details %>
-</p>
-
-<p>
   <b>Method of Payment:</b>
   <%= @gen_exp.method_of_payment %>
 </p>
@@ -34,6 +29,13 @@
   <b>Purpose:</b>
   <%= @gen_exp.purpose %>
 </p>
+
+<p>
+  <b>Details:</b>
+  <%= @gen_exp.details %>
+</p>
+
+
 
 
 <%= link_to 'Edit', edit_gen_exp_path(@gen_exp) %> |

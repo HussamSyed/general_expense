@@ -1,0 +1,31 @@
+<h1>Mileage Segments</h1>
+
+<table>
+  <tr>
+    <th>Vehicle</th>
+    <th>Date</th>
+    <th>Miles Driven</th>
+    <th>Destination</th>
+    <th>Purpose</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mileage_segments.each do |mileage_segment| %>
+  <tr>
+    <td><%= mileage_segment.vehicle.vehicle_model %></td>
+    <td><%= mileage_segment.date %></td>
+    <td><%= mileage_segment.miles_driven %></td>
+    <td><%= mileage_segment.destination %></td>
+    <td><%= mileage_segment.purpose %></td>
+    <td><%= link_to 'Show', mileage_segment %></td>
+    <td><%= link_to 'Edit', edit_mileage_segment_path(mileage_segment) %></td>
+    <td><%= link_to 'Destroy', mileage_segment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Segment', new_mileage_segment_path %> | <%= link_to 'Vehicle Expenses', vehicle_expenses_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  vehicle: MyString
+  date: 2013-06-06
+  miles_driven: 9.99
+  destination: MyString
+  purpose: MyString
+
+two:
+  vehicle: MyString
+  date: 2013-06-06
+  miles_driven: 9.99
+  destination: MyString
+  purpose: MyString

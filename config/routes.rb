@@ -1,4 +1,7 @@
 GeneralExpense::Application.routes.draw do
+  resources :mileage_segments
+
+
   resources :travel_expenses
 
 
