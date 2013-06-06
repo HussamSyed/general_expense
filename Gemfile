@@ -7,7 +7,8 @@ gem 'thin'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
-
+gem 'prawn' #to generate pdf of receipts
+gem 'paperclip' #to add receipts to expenses
 gem 'better_errors' 
 gem 'simple_form'
 gem 'bootstrap-sass'
