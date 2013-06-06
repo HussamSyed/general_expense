@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130605230428) do
+ActiveRecord::Schema.define(:version => 20130606173551) do
 
   create_table "gen_exps", :force => true do |t|
     t.decimal  "amount"
@@ -22,17 +22,19 @@ ActiveRecord::Schema.define(:version => 20130605230428) do
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
     t.text     "details"
+    t.boolean  "reimbursable"
   end
 
   create_table "me_exps", :force => true do |t|
     t.decimal  "amount"
     t.date     "date"
     t.string   "venue"
-    t.integer  "no_of_people"
     t.text     "details"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
     t.string   "method_of_payment"
+    t.boolean  "reimbursable"
+    t.string   "attendees"
   end
 
   create_table "travel_expenses", :force => true do |t|
@@ -45,6 +47,7 @@ ActiveRecord::Schema.define(:version => 20130605230428) do
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
     t.integer  "travel_id"
+    t.boolean  "reimbursable"
   end
 
   create_table "travels", :force => true do |t|
@@ -76,6 +79,7 @@ ActiveRecord::Schema.define(:version => 20130605230428) do
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
     t.integer  "vehicle_id"
+    t.boolean  "reimbursable"
   end
 
   create_table "vehicles", :force => true do |t|
@@ -84,8 +88,9 @@ ActiveRecord::Schema.define(:version => 20130605230428) do
     t.integer  "year"
     t.string   "vin"
     t.string   "reg_no"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+    t.boolean  "business_vehicle", :default => true
   end
 
 end

@@ -3,10 +3,11 @@
 <table>
   <tr>
     <th>Amount</th>
+    <th>Reimbursable?</th>
     <th>Date</th>
+    <th>Attendees</th>
     <th>Method of Payment</th>
     <th>Venue</th>
-    <th>No of people</th>
     <th>Details</th>
     <th></th>
     <th></th>
@@ -16,10 +17,11 @@
 <% @me_exps.each do |me_exp| %>
   <tr>
     <td><%= me_exp.amount %></td>
+    <td><%= me_exp.reimbursable %></td>
     <td><%= me_exp.date %></td>
+    <td><%= me_exp.attendees %></td>
     <td><%= me_exp.method_of_payment %></td>
     <td><%= me_exp.venue %></td>
-    <td><%= me_exp.no_of_people %></td>
     <td><%= me_exp.details %></td>
     <td><%= link_to 'Show', me_exp %></td>
     <td><%= link_to 'Edit', edit_me_exp_path(me_exp) %></td>

@@ -1,6 +1,8 @@
 class MeExp < ActiveRecord::Base
-  attr_accessible :amount, :date, :details, :no_of_people, :venue, :method_of_payment
+  attr_accessible :amount, :date, :details, :venue, :method_of_payment, 
+  :reimbursable, :attendees
 
   #Validations
-  validates_presence_of :amount, :date, :details, :no_of_people, :venue, :method_of_payment
+  validates_presence_of :amount, :date, :details, :venue, :method_of_payment, 
+  :attendees
 end

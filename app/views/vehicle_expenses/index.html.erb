@@ -4,8 +4,9 @@
   <tr>
     <th>Model</th>
     <th>Amount</th>
+    <th>Reimbursable?</th>
     <th>Date</th>
-    <th>Method of payment</th>
+    <th>Method of Payment</th>
     <th>Purpose</th>
     <th>Seller</th>
     <th>Details</th>
@@ -18,6 +19,7 @@
   <tr>
     <td><%= vehicle_expense.vehicle.vehicle_model %></td>
     <td><%= vehicle_expense.amount %></td>
+    <td><%= vehicle_expense.reimbursable %></td>
     <td><%= vehicle_expense.date %></td>
     <td><%= vehicle_expense.method_of_payment %></td>
     <td><%= vehicle_expense.purpose %></td>

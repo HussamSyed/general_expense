@@ -3,9 +3,10 @@
 <table>
   <tr>
     <th>Amount</th>
+    <th>Reimbursable?</th>
     <th>Date</th>
     <th>Details</th>
-    <th>Method of payment</th>
+    <th>Method of Payment</th>
     <th>Seller</th>
     <th>Purpose</th>
     <th></th>
@@ -16,6 +17,7 @@
 <% @gen_exps.each do |gen_exp| %>
   <tr>
     <td><%= gen_exp.amount %></td>
+    <td><%= gen_exp.reimbursable %></td>
     <td><%= gen_exp.date %></td>
     <td><%= gen_exp.details %></td>
     <td><%= gen_exp.method_of_payment %></td>

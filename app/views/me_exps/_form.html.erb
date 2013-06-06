@@ -12,23 +12,15 @@
   <% end %>
 
   <div class="field">
-    <%= f.input :amount %><br />
+    <%= f.input :amount %>
+    <%= f.input :reimbursable %>
+    <%= f.input :date %>
+    <%= f.input :attendees %>
+    <%= f.input :method_of_payment %>
+    <%= f.input :venue %>
+    <%= f.input :details, :input_html => {:rows => 5, :cols => 20} %>
   </div>
-  <div class="field">
-    <%= f.input :date %><br />
-  </div>
-  <div class="field">
-    <%= f.input :method_of_payment %><br />
-  </div>
-  <div class="field">
-    <%= f.input :venue %><br />
-  </div>
-  <div class="field">
-    <%= f.input :no_of_people %><br />
-  </div>
-  <div class="field">
-    <%= f.input :details, :input_html => {:rows => 5, :cols => 20} %><br />
-  </div>
+
   <div class="actions">
     <%= f.button :submit, "Create Expense" %>
   </div>

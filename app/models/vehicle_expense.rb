@@ -1,9 +1,11 @@
 class VehicleExpense < ActiveRecord::Base
-  attr_accessible :amount, :date, :details, :method_of_payment, :purpose, :seller, :vehicle_id, :vehicle_model
+  attr_accessible :amount, :date, :details, :method_of_payment, :purpose, :seller, 
+  :vehicle_id, :vehicle_model, :reimbursable
   
   #Associations
   belongs_to :vehicle
 
   #Validations
-  validates_presence_of :amount, :date, :details, :method_of_payment, :purpose, :seller, :vehicle_model
+  validates_presence_of :amount, :date, :details, :method_of_payment, :purpose, 
+  :seller, :vehicle_model
 end

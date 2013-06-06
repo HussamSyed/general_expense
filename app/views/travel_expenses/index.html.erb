@@ -3,8 +3,9 @@
 <table>
   <tr>
     <th>Amount</th>
+    <th>Reimbursable?</th>
     <th>Date</th>
-    <th>Method of payment</th>
+    <th>Method of Payment</th>
     <th>Details</th>
     <th>Purpose</th>
     <th>Seller</th>
@@ -16,6 +17,7 @@
 <% @travel_expenses.each do |travel_expense| %>
   <tr>
     <td><%= travel_expense.amount %></td>
+    <td><%= travel_expense.reimbursable %></td>
     <td><%= travel_expense.date %></td>
     <td><%= travel_expense.method_of_payment %></td>
     <td><%= travel_expense.details %></td>
