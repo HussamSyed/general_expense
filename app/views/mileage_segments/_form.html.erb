@@ -3,6 +3,7 @@
 
   <div class="form-inputs">
     <%= f.input :vehicle_id, :collection => Vehicle.all, :label_method => :vehicle_model, :value_method => :id  %>
+    <%= link_to 'Add Vehicle', new_vehicle_path %>
     <%= f.input :date %>
     <%= f.input :miles_driven %>
     <%= f.input :destination %>
