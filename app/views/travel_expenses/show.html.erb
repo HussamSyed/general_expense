@@ -2,7 +2,9 @@
 
 <p>
   <b>Trip</b>
-  <%= @travel_expense.travel %>
+  <%= @travel_expense.travel.destination + 
+        " (" + @travel_expense.travel.start_date.strftime("%m/%d/%Y") + " to " +
+        @travel_expense.travel.end_date.strftime("%m/%d/%Y") + ")" %>
 </p>
 
 <p>

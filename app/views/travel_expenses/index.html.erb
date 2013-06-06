@@ -7,9 +7,9 @@
     <th>Reimbursable?</th>
     <th>Date</th>
     <th>Method of Payment</th>
+    <th>Seller</th>
     <th>Purpose</th>
     <th>Details</th>
-    <th>Seller</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,14 +17,17 @@
 
 <% @travel_expenses.each do |travel_expense| %>
   <tr>
-    <td><%= travel_expense.travel %></td>
+    <td><%= travel_expense.travel.destination + 
+        " (" + travel_expense.travel.start_date.strftime("%m/%d/%Y") + " to " +
+        travel_expense.travel.end_date.strftime("%m/%d/%Y") + ")" %>
+    </td>
     <td><%= travel_expense.amount %></td>
     <td><%= travel_expense.reimbursable %></td>
     <td><%= travel_expense.date %></td>
     <td><%= travel_expense.method_of_payment %></td>
+    <td><%= travel_expense.seller %></td>
     <td><%= travel_expense.purpose %></td>
     <td><%= travel_expense.details %></td>
-    <td><%= travel_expense.seller %></td>
     <td><%= link_to 'Show', travel_expense %></td>
     <td><%= link_to 'Edit', edit_travel_expense_path(travel_expense) %></td>
     <td><%= link_to 'Destroy', travel_expense, method: :delete, data: { confirm: 'Are you sure?' } %></td>

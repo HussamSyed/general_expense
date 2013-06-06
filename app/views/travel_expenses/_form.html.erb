@@ -9,6 +9,7 @@
         trip.end_date.strftime("%B %d, %Y") + ")" }, 
       :value_method => :id,
       :include_blank => false  %>
+    <%= link_to 'Add Trip', new_travel_path %>
     <%= f.input :amount %>
     <%= f.input :reimbursable %>
     <%= f.input :date %>

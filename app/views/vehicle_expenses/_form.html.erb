@@ -13,6 +13,7 @@
 
   <div class="field">
     <%= f.input :vehicle_id, :collection => Vehicle.all, :label_method => :vehicle_model, :value_method => :id  %>
+    <%= link_to 'Add Vehicle', new_vehicle_path %>
     <%= f.input :amount %>
     <%= f.input :reimbursable %>
     <%= f.input :date %>
