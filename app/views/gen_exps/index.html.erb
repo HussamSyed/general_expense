@@ -17,7 +17,7 @@
 <% @gen_exps.each do |gen_exp| %>
   <tr>
     <td><%= gen_exp.amount %></td>
-    <td><%= gen_exp.reimbursable %></td>
+    <td><%= gen_exp.reimbursable ? 'Yes' : 'No' %></td>
     <td><%= gen_exp.date %></td>
     <td><%= gen_exp.method_of_payment %></td>
     <td><%= gen_exp.seller %></td>
