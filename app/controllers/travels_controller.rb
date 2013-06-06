@@ -1,4 +1,6 @@
 class TravelsController < ApplicationController
+ 
+
   # GET /travels
   # GET /travels.json
   def index
