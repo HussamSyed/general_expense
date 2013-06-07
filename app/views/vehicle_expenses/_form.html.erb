@@ -1,4 +1,4 @@
-<%= simple_form_for(@vehicle_expense) do |f| %>
+<%= simple_form_for(@vehicle_expense, :html => {:multipart => true}) do |f| %>
   <% if @vehicle_expense.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@vehicle_expense.errors.count, "error") %> prohibited this vehicle_expense from being saved:</h2>
@@ -22,6 +22,7 @@
     <%= f.input :purpose %>
     <%= f.input :seller %>
     <%= f.input :details, :input_html => {:rows => 5, :cols => 20} %>
+    <%= f.file_field :receipt %>
   </div>
   <div class="actions">
     <%= f.button :submit, "Create Expense" %>

@@ -1,4 +1,4 @@
-<%= simple_form_for(@me_exp) do |f| %>
+<%= simple_form_for(@me_exp, :html => {:multipart => true}) do |f| %>
   <% if @me_exp.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@me_exp.errors.count, "error") %> prohibited this me_exp from being saved:</h2>
@@ -20,6 +20,7 @@
     <%= f.input :online %>
     <%= f.input :venue %>
     <%= f.input :details, :input_html => {:rows => 5, :cols => 20} %>
+    <%= f.file_field :receipt %>
   </div>
 
   <div class="actions">

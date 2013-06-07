@@ -40,7 +40,10 @@
   <%= @gen_exp.details %>
 </p>
 
-
+<p>
+  <b>Receipt:</b><br />
+  <%= image_tag @gen_exp.receipt_url.to_s %>
+</p>
 
 
 <%= link_to 'Edit', edit_gen_exp_path(@gen_exp) %> |

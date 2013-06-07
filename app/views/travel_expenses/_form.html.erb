@@ -1,4 +1,4 @@
-<%= simple_form_for(@travel_expense) do |f| %>
+<%= simple_form_for(@travel_expense, :html => {:multipart => true}) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
@@ -15,9 +15,10 @@
     <%= f.input :date %>
     <%= f.input :method_of_payment %>
     <%= f.input :online %>
+    <%= f.input :seller %>
     <%= f.input :purpose %>
     <%= f.input :details, :input_html => {:rows => 5, :cols => 20}%>
-    <%= f.input :seller %>
+    <%= f.file_field :receipt %>
   </div>
 
   <div class="form-actions">

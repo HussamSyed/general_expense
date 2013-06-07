@@ -33,6 +33,11 @@
 </p>
 
 <p>
+  <b>Seller:</b>
+  <%= @travel_expense.seller %>
+</p>
+
+<p>
   <b>Purpose:</b>
   <%= @travel_expense.purpose %>
 </p>
@@ -43,9 +48,10 @@
 </p>
 
 <p>
-  <b>Seller:</b>
-  <%= @travel_expense.seller %>
+  <b>Receipt:</b><br />
+  <%= image_tag @travel_expense.receipt_url.to_s %>
 </p>
+
 
 
 <%= link_to 'Edit', edit_travel_expense_path(@travel_expense) %> |

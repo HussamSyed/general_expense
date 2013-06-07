@@ -40,6 +40,11 @@
   <%= @me_exp.details %>
 </p>
 
+<p>
+  <b>Receipt:</b><br />
+  <%= image_tag @me_exp.receipt_url.to_s %>
+</p>
+
 
 <%= link_to 'Edit', edit_me_exp_path(@me_exp) %> |
 <%= link_to 'Back', me_exps_path %>

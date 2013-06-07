@@ -8,7 +8,9 @@ gem 'thin'
 
 
 gem 'prawn' #to generate pdf of receipts
-gem 'paperclip' #to add receipts to expenses
+#gem 'paperclip' #obsolete, will delete late on
+gem 'carrierwave' #to add receipts to expenses
+#gem 'rmagick' #addendum to carrierwave gem
 gem 'better_errors' 
 gem 'simple_form'
 gem 'bootstrap-sass'

@@ -1,4 +1,4 @@
-<%= simple_form_for(@gen_exp) do |f| %>
+<%= simple_form_for(@gen_exp, :html => {:multipart => true}) do |f| %>
   <% if @gen_exp.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@gen_exp.errors.count, "error") %> prohibited this gen_exp from being saved:</h2>
@@ -20,6 +20,7 @@
     <%= f.input :seller %>
     <%= f.input :purpose %>
     <%= f.input :details, :input_html => {:rows => 5, :cols => 20} %>
+    <%= f.file_field :receipt %>
   </div>
   <div class="actions">
     <%= f.button :submit, "Create Expense" %>

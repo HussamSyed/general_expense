@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130607163440) do
+ActiveRecord::Schema.define(:version => 20130607215752) do
 
   create_table "gen_exps", :force => true do |t|
     t.decimal  "amount"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20130607163440) do
     t.text     "details"
     t.boolean  "reimbursable"
     t.boolean  "online",            :default => false
+    t.string   "receipt"
   end
 
   create_table "me_exps", :force => true do |t|
@@ -37,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20130607163440) do
     t.boolean  "reimbursable"
     t.string   "attendees"
     t.boolean  "online",            :default => false
+    t.string   "receipt"
   end
 
   create_table "mileage_segments", :force => true do |t|
@@ -61,6 +63,7 @@ ActiveRecord::Schema.define(:version => 20130607163440) do
     t.integer  "travel_id"
     t.boolean  "reimbursable"
     t.boolean  "online",            :default => false
+    t.string   "receipt"
   end
 
   create_table "travels", :force => true do |t|
@@ -84,6 +87,7 @@ ActiveRecord::Schema.define(:version => 20130607163440) do
     t.integer  "vehicle_id"
     t.boolean  "reimbursable"
     t.boolean  "online",            :default => false
+    t.string   "receipt"
   end
 
   create_table "vehicles", :force => true do |t|

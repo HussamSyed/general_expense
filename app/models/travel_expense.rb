@@ -1,6 +1,8 @@
 class TravelExpense < ActiveRecord::Base
   attr_accessible :amount, :date, :details, :method_of_payment, :purpose, :seller, 
-  :travel_id, :reimbursable, :online
+  :travel_id, :reimbursable, :online, :receipt
+
+  mount_uploader :receipt, ReceiptUploader
 
   #Associations
   belongs_to :travel

@@ -1,7 +1,9 @@
 class VehicleExpense < ActiveRecord::Base
   attr_accessible :amount, :date, :details, :method_of_payment, :purpose, :seller, 
-  :vehicle_id, :reimbursable, :online
+  :vehicle_id, :reimbursable, :online, :receipt
   
+  mount_uploader :receipt, ReceiptUploader
+
   #Associations
   belongs_to :vehicle
 
