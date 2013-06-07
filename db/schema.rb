@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130606222303) do
+ActiveRecord::Schema.define(:version => 20130607163440) do
 
   create_table "gen_exps", :force => true do |t|
     t.decimal  "amount"
@@ -19,10 +19,11 @@ ActiveRecord::Schema.define(:version => 20130606222303) do
     t.string   "method_of_payment"
     t.string   "seller"
     t.string   "purpose"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
     t.text     "details"
     t.boolean  "reimbursable"
+    t.boolean  "online",            :default => false
   end
 
   create_table "me_exps", :force => true do |t|
@@ -30,11 +31,12 @@ ActiveRecord::Schema.define(:version => 20130606222303) do
     t.date     "date"
     t.string   "venue"
     t.text     "details"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
     t.string   "method_of_payment"
     t.boolean  "reimbursable"
     t.string   "attendees"
+    t.boolean  "online",            :default => false
   end
 
   create_table "mileage_segments", :force => true do |t|
@@ -54,10 +56,11 @@ ActiveRecord::Schema.define(:version => 20130606222303) do
     t.text     "details"
     t.string   "purpose"
     t.string   "seller"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
     t.integer  "travel_id"
     t.boolean  "reimbursable"
+    t.boolean  "online",            :default => false
   end
 
   create_table "travels", :force => true do |t|
@@ -76,10 +79,11 @@ ActiveRecord::Schema.define(:version => 20130606222303) do
     t.string   "purpose"
     t.string   "seller"
     t.text     "details"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
     t.integer  "vehicle_id"
     t.boolean  "reimbursable"
+    t.boolean  "online",            :default => false
   end
 
   create_table "vehicles", :force => true do |t|

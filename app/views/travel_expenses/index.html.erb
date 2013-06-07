@@ -7,6 +7,7 @@
     <th>Reimbursable?</th>
     <th>Date</th>
     <th>Method of Payment</th>
+    <th>Online?</th>
     <th>Seller</th>
     <th>Purpose</th>
     <th>Details</th>
@@ -25,6 +26,7 @@
     <td><%= travel_expense.reimbursable ? 'Yes' : 'No' %></td>
     <td><%= travel_expense.date %></td>
     <td><%= travel_expense.method_of_payment %></td>
+    <td><%= travel_expense.online ? 'Yes' : 'No' %></td>
     <td><%= travel_expense.seller %></td>
     <td><%= travel_expense.purpose %></td>
     <td><%= travel_expense.details %></td>

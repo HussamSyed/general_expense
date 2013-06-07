@@ -6,6 +6,7 @@
     <th>Reimbursable?</th>
     <th>Date</th>
     <th>Method of Payment</th>
+    <th>Online?</th>
     <th>Seller</th>
     <th>Purpose</th>
     <th>Details</th>
@@ -20,6 +21,7 @@
     <td><%= gen_exp.reimbursable ? 'Yes' : 'No' %></td>
     <td><%= gen_exp.date %></td>
     <td><%= gen_exp.method_of_payment %></td>
+    <td><%= gen_exp.online ? 'Yes' : 'No' %></td>
     <td><%= gen_exp.seller %></td>
     <td><%= gen_exp.purpose %></td>
     <td><%= gen_exp.details %></td>

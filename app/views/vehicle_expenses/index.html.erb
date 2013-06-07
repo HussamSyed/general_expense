@@ -7,6 +7,7 @@
     <th>Reimbursable?</th>
     <th>Date</th>
     <th>Method of Payment</th>
+    <th>Online?</th>
     <th>Seller</th>
     <th>Purpose</th>
     <th>Details</th>
@@ -22,6 +23,7 @@
     <td><%= vehicle_expense.reimbursable ? 'Yes' : 'No' %></td>
     <td><%= vehicle_expense.date %></td>
     <td><%= vehicle_expense.method_of_payment %></td>
+    <td><%= vehicle_expense.online ? 'Yes' : 'No' %></td>
     <td><%= vehicle_expense.seller %></td>
     <td><%= vehicle_expense.purpose %></td>
     <td><%= vehicle_expense.details %></td>

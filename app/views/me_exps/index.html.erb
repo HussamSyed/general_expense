@@ -7,6 +7,7 @@
     <th>Date</th>
     <th>Attendees</th>
     <th>Method of Payment</th>
+    <th>Online?</th>
     <th>Venue</th>
     <th>Details</th>
     <th></th>
@@ -21,6 +22,7 @@
     <td><%= me_exp.date %></td>
     <td><%= me_exp.attendees %></td>
     <td><%= me_exp.method_of_payment %></td>
+    <td><%= me_exp.online ? 'Yes' : 'No' %></td>
     <td><%= me_exp.venue %></td>
     <td><%= me_exp.details %></td>
     <td><%= link_to 'Show', me_exp %></td>
