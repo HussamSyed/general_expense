@@ -6,11 +6,18 @@ gem 'thin'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+# Receipt and Report Implementation
+	gem 'prawn' 		#to generate pdf of receipts
+	gem 'prawn_rails'
+	gem 'prawnto'
+	#gem 'pdfkit'
+	#gem 'wicked_pdf'
+	#gem 'wkhtmltopdf'
+	#gem 'paperclip' 	#obsolete, will delete later on
+	gem 'carrierwave' 	#to add receipts to expenses
+	#gem 'rmagick' 		#addendum to carrierwave gem, to resize images to their thumbnails, etc.
 
-gem 'prawn' #to generate pdf of receipts
-#gem 'paperclip' #obsolete, will delete late on
-gem 'carrierwave' #to add receipts to expenses
-#gem 'rmagick' #addendum to carrierwave gem
+
 gem 'better_errors' 
 gem 'simple_form'
 gem 'bootstrap-sass'

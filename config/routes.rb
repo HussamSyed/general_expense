@@ -16,8 +16,8 @@ GeneralExpense::Application.routes.draw do
 
   resources :me_exps
 
-
   resources :gen_exps
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,4 +1,6 @@
 class GenExpsController < ApplicationController
+
+
   # GET /gen_exps
   # GET /gen_exps.json
   def index

@@ -2,5 +2,10 @@
 
 <%= render 'form' %>
 
+<p>
+  <b>Receipt:</b><br />
+  <%= image_tag @travel_expense.receipt_url.to_s %>
+</p>
+
 <%= link_to 'Show', @travel_expense %> |
 <%= link_to 'Back', travel_expenses_path %>
