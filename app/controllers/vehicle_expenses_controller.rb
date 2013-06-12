@@ -7,6 +7,12 @@ class VehicleExpensesController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @vehicle_expenses }
+      format.pdf do
+        pdf = VehicleExpensePdf.new(@vehicle_expenses, view_context)
+        send_data pdf.render,
+        type: "application/pdf",
+        disposition: "inline"
+      end
     end
   end
 
@@ -18,6 +24,14 @@ class VehicleExpensesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @vehicle_expense }
+=begin
+      format.pdf do
+        pdf = VehicleExpensePdf.new(@vehicle_expense, view_context)
+        send_data pdf.render,
+        type: "application/pdf",
+        disposition: "inline"
+      end
+=end
     end
   end
 
