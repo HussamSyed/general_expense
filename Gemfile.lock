@@ -126,7 +126,6 @@ GEM
       mime-types (>= 1.16)
     ruby-rc4 (0.1.5)
     rubyzip (0.9.9)
-    ryanb-uniquify (0.1.0)
     sass (3.2.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -171,7 +170,6 @@ DEPENDENCIES
   prawn_rails
   prawnto
   rails (= 3.2.13)
-  ryanb-uniquify
   sass-rails (~> 3.2.3)
   simple_form
   sqlite3
