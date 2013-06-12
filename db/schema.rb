@@ -11,7 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130607215752) do
+ActiveRecord::Schema.define(:version => 20130612213044) do
+
+  create_table "clients", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "client_id"
+    t.text     "taxpayer_type"
+    t.integer  "phone_number"
+    t.date     "date"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "expenses", :force => true do |t|
+    t.date     "date"
+    t.text     "description"
+    t.boolean  "online"
+    t.text     "comments"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "receipt"
+  end
 
   create_table "gen_exps", :force => true do |t|
     t.decimal  "amount"

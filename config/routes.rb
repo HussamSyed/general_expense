@@ -1,4 +1,7 @@
 GeneralExpense::Application.routes.draw do
+  resources :clients
+
+
   resources :mileage_segments
 
 
@@ -16,8 +19,11 @@ GeneralExpense::Application.routes.draw do
 
   resources :me_exps
 
+
   resources :gen_exps
 
+
+  resources :expenses
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

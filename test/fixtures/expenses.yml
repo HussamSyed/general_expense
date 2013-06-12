@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: 2013-06-12
+  description: MyText
+  online: false
+  comments: MyText
+
+two:
+  date: 2013-06-12
+  description: MyText
+  online: false
+  comments: MyText

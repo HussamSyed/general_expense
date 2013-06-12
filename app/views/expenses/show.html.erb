@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @expense.date %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @expense.description %>
+</p>
+
+<p>
+  <b>Online?</b>
+  <%= @expense.online ? 'Yes' : 'No' %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @expense.comments %>
+</p>
+
+<p>
+  <b>Receipt:</b><br />
+  <%= image_tag @expense.receipt_url.to_s %>
+</p>
+
+
+<%= link_to 'Edit', edit_expense_path(@expense) %> |
+<%= link_to 'Back', expenses_path %>

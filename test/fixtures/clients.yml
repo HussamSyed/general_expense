@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  email: MyString
+  client_id: MyString
+  taxpayer_type: MyText
+  phone_number: 1
+  date: 2013-06-12
+
+two:
+  name: MyString
+  email: MyString
+  client_id: MyString
+  taxpayer_type: MyText
+  phone_number: 1
+  date: 2013-06-12
